@@ -9,7 +9,7 @@ rec.push_back(7);
 
 unsigned long long int elf0 = 0;
 unsigned long long int elf1 = 1;
-long long int tic = 0;
+unsigned long long int tic = 0;
 
 unsigned long long int size = 0;
 while(true) {
@@ -26,5 +26,7 @@ while(true) {
         break;
     }
     tic++;
+    if(tic == 0)
+        std::cout << "DEAD" << std::endl;
 }
 }
