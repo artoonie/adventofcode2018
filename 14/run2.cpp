@@ -3,7 +3,7 @@
 #include <vector>
 
 inline bool chk(const std::vector<char>& rec) {
-    unsigned long long int size = rec.size();
+    size_t size = rec.size();
     bool is = rec[size-1] == 1 && rec[size-2] == 4 && rec[size-3] == 6 && rec[size-4] == 0 && rec[size-5] == 7 && rec[size-6] == 1;
     if(is) std::cout << rec.size()-6 << std::endl;
     return is;
@@ -14,11 +14,11 @@ std::vector<char> rec;
 rec.push_back(3);
 rec.push_back(7);
 
-unsigned long long int elf0 = 0;
-unsigned long long int elf1 = 1;
-unsigned long long int tic = 0;
+size_t elf0 = 0;
+size_t elf1 = 1;
+size_t tic = 0;
 
-unsigned long long int size = 0;
+size_t size = 0;
 while(true) {
     char v = rec[elf0] + rec[elf1];
     if(v >= 10) {

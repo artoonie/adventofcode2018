@@ -1,3 +1,5 @@
+# THIS DIDN'T WORK
+# FIXED IN C++
 rec = [3, 7]
 
 elf0 = 0
